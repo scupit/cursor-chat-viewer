@@ -107,7 +107,7 @@ def convert_chat_to_json(input_file_path: str):
 
 def main():
     if len(sys.argv) != 2:
-        print("Usage: python cursor_chat_converter.py <input_markdown_file>")
+        print("Usage: python convert.py <input_markdown_file>")
         sys.exit(1)
     
     input_file = sys.argv[1]
