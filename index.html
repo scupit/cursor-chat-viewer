@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cursor Chat Viewer</title>
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css"
+    />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
-    
+
     <!-- Markup Templating (required dependency for several languages) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-markup-templating.min.js"></script>
-    
+
     <!-- Core Web & Programming Languages -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-css.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-css-extras.min.js"></script>
@@ -37,7 +40,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-swift.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-kotlin.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-scala.min.js"></script>
-    
+
     <!-- Shell & Config -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-bash.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-powershell.min.js"></script>
@@ -47,7 +50,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-docker.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-nginx.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-apacheconf.min.js"></script>
-    
+
     <!-- Functional & Systems -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-haskell.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-elixir.min.js"></script>
@@ -58,11 +61,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-scheme.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-lua.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-nim.min.js"></script>
-    
+
     <!-- JVM & Enterprise -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-groovy.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-clojure.min.js"></script>
-    
+
     <!-- Web Frameworks & Templates -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-jsx.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-tsx.min.js"></script>
@@ -72,37 +75,37 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-django.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-erb.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-liquid.min.js"></script>
-    
+
     <!-- Data & Query -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-sql.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-graphql.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-plsql.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-protobuf.min.js"></script>
-    
+
     <!-- Scientific & Math -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-matlab.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-r.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-julia.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-latex.min.js"></script>
-    
+
     <!-- Assembly & Low-level -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-nasm.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-wasm.min.js"></script>
-    
+
     <!-- Mobile & Game Dev -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-dart.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-objectivec.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-glsl.min.js"></script>
-    
+
     <!-- DevOps & Infrastructure -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-git.min.js"></script>
-    
+
     <!-- Markup & Documentation -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-asciidoc.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-rest.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-textile.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-wiki.min.js"></script>
-    
+
     <!-- Other Practical -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-diff.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-http.min.js"></script>
@@ -122,1028 +125,1431 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-actionscript.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-batch.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-visual-basic.min.js"></script>
-    
+
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+          Oxygen, Ubuntu, Cantarell, sans-serif;
+        background: #0a0a0a;
+        padding: 0;
+        margin: 0;
+        line-height: 1.6;
+        color: #e8e8e8;
+      }
+
+      .container {
+        margin: 0 auto;
+        background: #0a0a0a;
+        overflow: hidden;
+      }
+
+      .header {
+        background: #111111;
+        color: #e8e8e8;
+        padding: 30px;
+        text-align: center;
+        border-bottom: 1px solid #222222;
+      }
+
+      .header h1 {
+        font-size: 24px;
+        margin-bottom: 10px;
+        font-weight: 600;
+      }
+
+      .header .metadata {
+        font-size: 14px;
+        opacity: 0.7;
+        color: #999999;
+      }
+
+      .upload-area {
+        padding: 40px;
+        text-align: center;
+        border-bottom: 1px solid #222222;
+        background: #0f0f0f;
+      }
+
+      .upload-area.hidden {
+        display: none;
+      }
+
+      .upload-box {
+        border: 2px dashed #333333;
+        border-radius: 12px;
+        padding: 40px;
+        cursor: pointer;
+        transition: all 0.3s;
+        background: #151515;
+      }
+
+      .upload-box:hover {
+        border-color: #3b82f6;
+        background: #1a1a1a;
+      }
+
+      .upload-box.dragover {
+        border-color: #3b82f6;
+        background: #1a1f2e;
+      }
+
+      .upload-box input[type='file'] {
+        display: none;
+      }
+
+      .upload-instructions {
+        color: #888888;
+        margin-top: 15px;
+        font-size: 14px;
+      }
+
+      .paste-area {
+        margin-top: 20px;
+      }
+
+      .paste-area textarea {
+        width: 100%;
+        min-height: 150px;
+        padding: 15px;
+        border: 2px solid #2a2a2a;
+        border-radius: 8px;
+        font-family: 'Monaco', 'Consolas', monospace;
+        font-size: 13px;
+        resize: vertical;
+        background: #151515;
+        color: #e8e8e8;
+      }
+
+      .paste-area textarea:focus {
+        outline: none;
+        border-color: #3b82f6;
+      }
+
+      .paste-buttons {
+        margin-top: 10px;
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+      }
+
+      .paste-area button {
+        padding: 12px 30px;
+        background: #3b82f6;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: 600;
+        transition: all 0.2s;
+      }
+
+      .paste-area button:hover {
+        background: #2563eb;
+        transform: translateY(-1px);
+      }
+
+      .chat-container {
+        padding: 30px 20px;
+        display: none;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .chat-container.visible {
+        display: block;
+      }
+
+      .message {
+        margin-bottom: 24px;
+        display: flex;
+        gap: 12px;
+        scroll-margin-top: 20px;
+      }
+
+      .message.user {
+        flex-direction: row-reverse;
+      }
+
+      .message-avatar {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        color: white;
+        font-size: 16px;
+      }
+
+      .message.user .message-avatar {
+        background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+      }
+
+      .message.agent .message-avatar {
+        background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
+      }
+
+      .message-bubble {
+        max-width: 70%;
+        padding: 16px 18px;
+        border-radius: 16px;
+        position: relative;
+      }
+
+      .message.user .message-bubble {
+        background: #1e3a5f;
+        color: #e8e8e8;
+        border-top-right-radius: 4px;
+      }
+
+      .message.agent .message-bubble {
+        background: #1a1a1a;
+        color: #e8e8e8;
+        border-top-left-radius: 4px;
+        border: 1px solid #2a2a2a;
+      }
+
+      .message-bubble h1,
+      .message-bubble h2,
+      .message-bubble h3,
+      .message-bubble h4,
+      .message-bubble h5,
+      .message-bubble h6 {
+        margin-top: 12px;
+        margin-bottom: 8px;
+        color: #e8e8e8;
+      }
+
+      .message-bubble h1:first-child,
+      .message-bubble h2:first-child,
+      .message-bubble h3:first-child,
+      .message-bubble h4:first-child,
+      .message-bubble h5:first-child,
+      .message-bubble h6:first-child {
+        margin-top: 0;
+      }
+
+      .message-bubble p {
+        margin-bottom: 10px;
+      }
+
+      .message-bubble p:last-child {
+        margin-bottom: 0;
+      }
+
+      .message-bubble pre {
+        background: #0f0f0f;
+        padding: 14px;
+        border-radius: 8px;
+        overflow-x: auto;
+        margin: 10px 0;
+        max-width: 100%;
+        border: 1px solid #2a2a2a;
+      }
+
+      /* Both user and agent messages use the same background with slight transparency to show container color */
+
+      /* Only make code blocks (inside pre) display as block, not inline code */
+      .message-bubble pre code {
+        font-family: 'Monaco', 'Consolas', monospace;
+        font-size: 13px;
+        white-space: pre;
+        display: block;
+        background: none;
+        padding: 0;
+        color: #e8e8e8;
+      }
+
+      /* Inline code (not in pre) should remain inline */
+      .message-bubble code {
+        font-family: 'Monaco', 'Consolas', monospace;
+        font-size: 13px;
+      }
+
+      .message-bubble p code,
+      .message-bubble li code {
+        background: rgba(59, 130, 246, 0.15);
+        padding: 2px 6px;
+        border-radius: 4px;
+        font-size: 13px;
+        color: #60a5fa;
+      }
+
+      /* Keep inline code in user messages with light semi-transparent background */
+      .message.user .message-bubble p code,
+      .message.user .message-bubble li code {
+        background: rgba(255, 255, 255, 0.15);
+        color: #93c5fd;
+      }
+
+      /* Override Prism token backgrounds to prevent double background effect */
+      .message-bubble pre .token {
+        background: none !important;
+      }
+
+      .message-bubble pre .line-highlight {
+        background: none !important;
+      }
+
+      .message-bubble ul,
+      .message-bubble ol {
+        margin: 10px 0;
+        padding-left: 25px;
+      }
+
+      .message-bubble li {
+        margin: 8px 0;
+      }
+
+      .message-bubble blockquote {
+        border-left: 3px solid #3b82f6;
+        padding-left: 15px;
+        margin: 10px 0;
+        font-style: italic;
+        opacity: 0.9;
+      }
+
+      .message.user .message-bubble blockquote {
+        border-left-color: rgba(255, 255, 255, 0.5);
+      }
+
+      .message-bubble a {
+        color: #60a5fa;
+        text-decoration: none;
+      }
+
+      .message-bubble a:hover {
+        text-decoration: underline;
+      }
+
+      .reset-button {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        padding: 10px 20px;
+        background: #1a1a1a;
+        border: 1px solid #3b82f6;
+        color: #3b82f6;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: 600;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        display: none;
+        transition: all 0.2s;
+      }
+
+      .reset-button.visible {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+      }
+
+      .reset-button:hover {
+        background: #3b82f6;
+        color: white;
+        transform: translateY(-1px);
+        box-shadow: 0 6px 16px rgba(59, 130, 246, 0.3);
+      }
+
+      .error-message {
+        background: #2a1a1a;
+        color: #ef4444;
+        padding: 15px;
+        border-radius: 8px;
+        margin: 20px;
+        display: none;
+        border: 1px solid #7f1d1d;
+      }
+
+      .error-message.visible {
+        display: block;
+      }
+
+      /* Navigation arrows for jumping between messages */
+      .message-nav {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        display: none;
+        flex-direction: column;
+        gap: 8px;
+        z-index: 1000;
+      }
+
+      .message-nav.visible {
+        display: flex;
+      }
+
+      .message-nav-btn {
+        width: 48px;
+        height: 48px;
+        background: #1a1a1a;
+        border: 1px solid #3b82f6;
+        color: #3b82f6;
+        border-radius: 12px;
+        cursor: pointer;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        transition: all 0.2s;
+      }
+
+      .message-nav-btn:hover:not(:disabled) {
+        background: #3b82f6;
+        color: white;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 16px rgba(59, 130, 246, 0.3);
+      }
+
+      .message-nav-btn:disabled {
+        opacity: 0.3;
+        cursor: not-allowed;
+      }
+
+      /* Copy button for message bubbles */
+      .message-bubble {
+        position: relative;
+      }
+
+      .message-copy-btn {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        width: 28px;
+        height: 28px;
+        background: rgba(26, 26, 26, 0.9);
+        border: 1px solid rgba(59, 130, 246, 0.5);
+        border-radius: 6px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        color: #60a5fa;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+        transition: all 0.2s;
+        opacity: 0;
+        z-index: 5;
+      }
+
+      .message-bubble:hover .message-copy-btn {
+        opacity: 1;
+      }
+
+      .message-copy-btn:hover {
+        background: #3b82f6;
+        color: white;
+        border-color: #3b82f6;
+        box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+      }
+
+      .message-copy-btn.copied {
+        background: #10b981;
+        border-color: #10b981;
+        color: white;
+      }
+
+      /* ===== PHASE 2: CODE BLOCK COLLAPSIBLE STYLES ===== */
+      .code-block-wrapper {
+        position: relative;
+        margin: 10px 0;
+      }
+
+      /* Large code blocks get max-height and scroll */
+      pre[data-scrollable='true'] {
+        max-height: 400px;
+        overflow-y: auto;
+        overflow-x: auto;
+      }
+
+      /* Code block buttons container */
+      .code-block-buttons {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        display: flex;
+        gap: 6px;
+        z-index: 10;
+      }
+
+      .code-copy-btn,
+      .code-popout-btn {
+        width: 32px;
+        height: 32px;
+        background: rgba(26, 26, 26, 0.95);
+        border: 1px solid #3b82f6;
+        border-radius: 6px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+        color: #3b82f6;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+        transition: all 0.2s;
+      }
+
+      .code-copy-btn:hover,
+      .code-popout-btn:hover {
+        background: #3b82f6;
+        color: white;
+        box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+      }
+
+      .code-copy-btn.copied {
+        background: #10b981;
+        border-color: #10b981;
+        color: white;
+      }
+
+      /* For regular (non-truncated) code blocks */
+      .message-bubble pre {
+        position: relative;
+      }
+
+      .message-bubble pre .code-copy-btn-inline {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        width: 32px;
+        height: 32px;
+        background: rgba(26, 26, 26, 0.95);
+        border: 1px solid #3b82f6;
+        border-radius: 6px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        color: #3b82f6;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+        transition: all 0.2s;
+        opacity: 0;
+        z-index: 10;
+      }
+
+      .message-bubble pre:hover .code-copy-btn-inline {
+        opacity: 1;
+      }
+
+      .message-bubble pre .code-copy-btn-inline:hover {
+        background: #3b82f6;
+        color: white;
+        box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+      }
+
+      .message-bubble pre .code-copy-btn-inline.copied {
+        background: #10b981;
+        border-color: #10b981;
+        color: white;
+        opacity: 1;
+      }
+
+      /* Modal styles */
+      .code-modal-backdrop {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.85);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 10000;
+        animation: fadeIn 0.2s ease-in-out;
+        backdrop-filter: blur(4px);
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
         }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            background: #f5f5f5;
-            padding: 0;
-            margin: 0;
-            line-height: 1.6;
+        to {
+          opacity: 1;
         }
+      }
 
-        .container {
-            margin: 0 auto;
-            background: #f5f5f5;
-            overflow: hidden;
+      .code-modal {
+        background: #111111;
+        border-radius: 12px;
+        width: 90vw;
+        max-width: 1200px;
+        max-height: 90vh;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+        animation: slideUp 0.2s ease-out;
+        border: 1px solid #2a2a2a;
+      }
+
+      @keyframes slideUp {
+        from {
+          transform: translateY(20px);
+          opacity: 0;
         }
-
-        .header {
-            background: linear-gradient(135deg, #4a90e2 0%, #357abd 100%);
-            color: white;
-            padding: 30px;
-            text-align: center;
+        to {
+          transform: translateY(0);
+          opacity: 1;
         }
+      }
 
-        .header h1 {
-            font-size: 24px;
-            margin-bottom: 10px;
-        }
+      .code-modal-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 24px;
+        border-bottom: 1px solid #2a2a2a;
+      }
 
-        .header .metadata {
-            font-size: 14px;
-            opacity: 0.9;
-        }
+      .code-modal-header h3 {
+        margin: 0;
+        font-size: 18px;
+        color: #e8e8e8;
+        font-weight: 600;
+      }
 
-        .upload-area {
-            padding: 40px;
-            text-align: center;
-            border-bottom: 1px solid #e0e0e0;
-            background: white;
-        }
+      .code-modal-close {
+        background: none;
+        border: none;
+        font-size: 32px;
+        line-height: 1;
+        color: #888888;
+        cursor: pointer;
+        padding: 0;
+        width: 32px;
+        height: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 6px;
+        transition: all 0.2s;
+      }
 
-        .upload-area.hidden {
-            display: none;
-        }
+      .code-modal-close:hover {
+        background: #2a2a2a;
+        color: #e8e8e8;
+      }
 
-        .upload-box {
-            border: 2px dashed #ccc;
-            border-radius: 8px;
-            padding: 40px;
-            cursor: pointer;
-            transition: all 0.3s;
-        }
+      .code-modal-body {
+        flex: 1;
+        min-height: 0;
+        overflow: auto;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        background: #0a0a0a;
+      }
 
-        .upload-box:hover {
-            border-color: #4a90e2;
-            background: #f0f7ff;
-        }
+      .code-modal-body pre {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        background: none;
+        border-radius: 0;
+        padding: 0;
+        overflow: visible;
+      }
 
-        .upload-box.dragover {
-            border-color: #4a90e2;
-            background: #e3f2fd;
-        }
+      .code-modal-body code {
+        font-family: 'Monaco', 'Consolas', monospace;
+        font-size: 14px;
+        line-height: 1.5;
+        white-space: pre;
+        display: block;
+        width: 100%;
+        background: none;
+        padding: 0;
+        color: #e8e8e8;
+      }
 
-        .upload-box input[type="file"] {
-            display: none;
-        }
+      /* Override Prism backgrounds in modal */
+      .code-modal-body pre .token {
+        background: none !important;
+      }
 
-        .upload-instructions {
-            color: #666;
-            margin-top: 15px;
-            font-size: 14px;
-        }
+      .code-modal-footer {
+        padding: 16px 24px;
+        border-top: 1px solid #2a2a2a;
+        display: flex;
+        justify-content: flex-end;
+        flex: 0 0 auto;
+      }
 
-        .paste-area {
-            margin-top: 20px;
-        }
+      .code-modal-copy {
+        padding: 10px 24px;
+        background: #3b82f6;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: 600;
+        transition: all 0.2s;
+      }
 
-        .paste-area textarea {
-            width: 100%;
-            min-height: 150px;
-            padding: 15px;
-            border: 2px solid #e0e0e0;
-            border-radius: 8px;
-            font-family: monospace;
-            font-size: 13px;
-            resize: vertical;
-        }
+      .code-modal-copy:hover {
+        background: #2563eb;
+        transform: translateY(-1px);
+      }
 
-        .paste-buttons {
-            margin-top: 10px;
-            display: flex;
-            gap: 10px;
-            justify-content: center;
-        }
+      .code-modal-copy.copied {
+        background: #10b981;
+      }
 
-        .paste-area button {
-            padding: 12px 30px;
-            background: #4a90e2;
-            color: white;
-            border: none;
-            border-radius: 6px;
-            cursor: pointer;
-            font-size: 14px;
-            font-weight: 600;
-            transition: background 0.3s;
-        }
-
-        .paste-area button:hover {
-            background: #357abd;
-        }
-
-        .chat-container {
-            padding: 30px 20px;
-            display: none;
-        }
-
-        .chat-container.visible {
-            display: block;
-        }
-
-        .message {
-            margin-bottom: 20px;
-            display: flex;
-            gap: 12px;
-        }
-
-        .message.user {
-            flex-direction: row-reverse;
-        }
-
-        .message-avatar {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            flex-shrink: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-            color: white;
-            font-size: 16px;
-        }
-
-        .message.user .message-avatar {
-            background: linear-gradient(135deg, #4a90e2 0%, #357abd 100%);
-        }
-
-        .message.agent .message-avatar {
-            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-        }
-
-        .message-bubble {
-            max-width: 70%;
-            padding: 15px 18px;
-            border-radius: 18px;
-            position: relative;
-        }
-
-        .message.user .message-bubble {
-            background: #4a90e2;
-            color: white;
-            border-bottom-right-radius: 4px;
-        }
-
-        .message.agent .message-bubble {
-            background: #f5f5f5;
-            color: #333;
-            border-bottom-left-radius: 4px;
-        }
-
-        .message-bubble h1,
-        .message-bubble h2,
-        .message-bubble h3,
-        .message-bubble h4,
-        .message-bubble h5,
-        .message-bubble h6 {
-            margin-top: 12px;
-            margin-bottom: 8px;
-        }
-
-        .message-bubble h1:first-child,
-        .message-bubble h2:first-child,
-        .message-bubble h3:first-child,
-        .message-bubble h4:first-child,
-        .message-bubble h5:first-child,
-        .message-bubble h6:first-child {
-            margin-top: 0;
-        }
-
-        .message-bubble p {
-            margin-bottom: 10px;
-        }
-
-        .message-bubble p:last-child {
-            margin-bottom: 0;
-        }
-
-        .message-bubble pre {
-            background: #e8e8e8;
-            padding: 12px;
-            border-radius: 6px;
-            overflow-x: auto;
-            margin: 10px 0;
-            max-width: 100%;
-        }
-
-        /* Both user and agent messages use the same background with slight transparency to show container color */
-
-        /* Only make code blocks (inside pre) display as block, not inline code */
-        .message-bubble pre code {
-            font-family: 'Monaco', 'Consolas', monospace;
-            font-size: 13px;
-            white-space: pre;
-            display: block;
-            background: none;
-            padding: 0;
-        }
-
-        /* Inline code (not in pre) should remain inline */
-        .message-bubble code {
-            font-family: 'Monaco', 'Consolas', monospace;
-            font-size: 13px;
-        }
-
-        .message-bubble p code,
-        .message-bubble li code {
-            background: rgba(0,0,0,0.08);
-            padding: 2px 6px;
-            border-radius: 3px;
-            font-size: 13px;
-        }
-
-        /* Keep inline code in user messages with light semi-transparent background */
-        .message.user .message-bubble p code,
-        .message.user .message-bubble li code {
-            background: rgba(255,255,255,0.25);
-        }
-
-        /* Override Prism token backgrounds to prevent double background effect */
-        .message-bubble pre .token {
-            background: none !important;
-        }
-
-        .message-bubble pre .line-highlight {
-            background: none !important;
-        }
-
-        .message-bubble ul,
-        .message-bubble ol {
-            margin: 10px 0;
-            padding-left: 25px;
-        }
-
-        .message-bubble li {
-            margin: 8px 0;
-        }
-
-        .message-bubble blockquote {
-            border-left: 3px solid rgba(0,0,0,0.2);
-            padding-left: 15px;
-            margin: 10px 0;
-            font-style: italic;
-        }
-
-        .message.user .message-bubble blockquote {
-            border-left-color: rgba(255,255,255,0.5);
-        }
-
-        .message-bubble a {
-            color: inherit;
-            text-decoration: underline;
-        }
-
-        .reset-button {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            padding: 10px 20px;
-            background: white;
-            border: 2px solid #4a90e2;
-            color: #4a90e2;
-            border-radius: 6px;
-            cursor: pointer;
-            font-size: 14px;
-            font-weight: 600;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            display: none;
-        }
-
-        .reset-button.visible {
-            display: block;
-        }
-
-        .reset-button:hover {
-            background: #4a90e2;
-            color: white;
-        }
-
-        .error-message {
-            background: #fee;
-            color: #c33;
-            padding: 15px;
-            border-radius: 8px;
-            margin: 20px;
-            display: none;
-        }
-
-        .error-message.visible {
-            display: block;
-        }
-
-        /* ===== PHASE 2: CODE BLOCK COLLAPSIBLE STYLES ===== */
-        .code-block-wrapper {
-            position: relative;
-            margin: 10px 0;
-        }
-
-        /* Large code blocks get max-height and scroll */
-        pre[data-scrollable="true"] {
-            max-height: 400px;
-            overflow-y: auto;
-            overflow-x: auto;
-        }
-
-        /* Remove fade overlay styles - not needed anymore */
-
-        .code-popout-btn {
-            position: absolute;
-            top: 8px;
-            right: 8px;
-            width: 28px;
-            height: 28px;
-            background: rgba(255, 255, 255, 0.9);
-            border: 1px solid rgba(0, 0, 0, 0.1);
-            border-radius: 4px;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 16px;
-            color: #333;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            transition: all 0.2s;
-            z-index: 10;
-        }
-
-        .code-popout-btn:hover {
-            background: rgba(255, 255, 255, 1);
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-        }
-
-        /* Modal styles */
-        .code-modal-backdrop {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(0, 0, 0, 0.7);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            z-index: 10000;
-            animation: fadeIn 0.2s ease-in-out;
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-
+      @media (max-width: 768px) {
         .code-modal {
-            background: white;
-            border-radius: 12px;
-            width: 90vw;
-            max-width: 1200px;
-            max-height: 90vh;
-            display: flex;
-            flex-direction: column;
-            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
-            animation: slideUp 0.2s ease-out;
-        }
-
-        @keyframes slideUp {
-            from {
-                transform: translateY(20px);
-                opacity: 0;
-            }
-            to {
-                transform: translateY(0);
-                opacity: 1;
-            }
-        }
-
-        .code-modal-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 24px;
-            border-bottom: 1px solid #e0e0e0;
-        }
-
-        .code-modal-header h3 {
-            margin: 0;
-            font-size: 18px;
-            color: #333;
-        }
-
-        .code-modal-close {
-            background: none;
-            border: none;
-            font-size: 32px;
-            line-height: 1;
-            color: #666;
-            cursor: pointer;
-            padding: 0;
-            width: 32px;
-            height: 32px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 4px;
-            transition: background 0.2s;
-        }
-
-        .code-modal-close:hover {
-            background: #f0f0f0;
-            color: #333;
+          width: 95vw;
+          max-height: 95vh;
         }
 
         .code-modal-body {
-            flex: 1;
-            min-height: 0;
-            overflow: auto;
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            background: #f8f8f8;
+          padding: 12px;
         }
 
-        .code-modal-body pre {
-            margin: 0;
-            width: 100%;
-            height: 100%;
-            background: none;
-            border-radius: 0;
-            padding: 0;
-            overflow: visible;
-        }
-
-        .code-modal-body code {
-            font-family: 'Monaco', 'Consolas', monospace;
-            font-size: 14px;
-            line-height: 1.5;
-            white-space: pre;
-            display: block;
-            width: 100%;
-            background: none;
-            padding: 0;
-        }
-
-        /* Override Prism backgrounds in modal */
-        .code-modal-body pre .token {
-            background: none !important;
+        .code-modal-header {
+          padding: 16px 20px;
         }
 
         .code-modal-footer {
-            padding: 16px 24px;
-            border-top: 1px solid #e0e0e0;
-            display: flex;
-            justify-content: flex-end;
-            flex: 0 0 auto;
+          padding: 12px 20px;
         }
 
         .code-modal-copy {
-            padding: 10px 24px;
-            background: #4a90e2;
-            color: white;
-            border: none;
-            border-radius: 6px;
-            cursor: pointer;
-            font-size: 14px;
-            font-weight: 600;
-            transition: background 0.2s;
+          padding: 12px 20px;
+          min-height: 44px;
         }
-
-        .code-modal-copy:hover {
-            background: #357abd;
-        }
-
-        .code-modal-copy.copied {
-            background: #10b981;
-        }
-
-        @media (max-width: 768px) {
-            .code-modal {
-                width: 95vw;
-                max-height: 95vh;
-            }
-
-            .code-modal-body {
-                padding: 12px;
-            }
-
-            .code-modal-header {
-                padding: 16px 20px;
-            }
-
-            .code-modal-footer {
-                padding: 12px 20px;
-            }
-
-            .code-modal-copy {
-                padding: 12px 20px;
-                min-height: 44px;
-            }
-        }
-        /* ===== END PHASE 4 ===== */
-        /* ===== END PHASE 2 ===== */
+      }
+      /* ===== END PHASE 4 ===== */
+      /* ===== END PHASE 2 ===== */
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <div class="header" id="header">
-            <h1>Cursor Chat Viewer</h1>
-            <div class="metadata">Upload a chat export to view</div>
+      <div class="header" id="header">
+        <h1>Cursor Chat Viewer</h1>
+        <div class="metadata">Upload a chat export to view</div>
+      </div>
+
+      <div class="upload-area" id="uploadArea">
+        <div class="upload-box" id="uploadBox">
+          <input type="file" id="fileInput" accept=".json,.md" />
+          <div style="font-size: 48px; margin-bottom: 16px; opacity: 0.6">
+            📄
+          </div>
+          <div style="font-size: 16px; font-weight: 500">
+            Click to upload or drag & drop
+          </div>
+          <div style="font-size: 14px; opacity: 0.6; margin-top: 8px">
+            JSON or Markdown file
+          </div>
         </div>
-
-        <div class="upload-area" id="uploadArea">
-            <div class="upload-box" id="uploadBox">
-                <input type="file" id="fileInput" accept=".json,.md">
-                <div>📄 Click to upload or drag & drop a JSON or Markdown file</div>
-            </div>
-            <div class="upload-instructions">or paste JSON or Markdown below:</div>
-            <div class="paste-area">
-                <textarea id="jsonTextarea" placeholder="Paste your JSON or Markdown here..."></textarea>
-                <div class="paste-buttons">
-                    <button id="pasteJsonButton">Load as JSON</button>
-                    <button id="pasteMarkdownButton">Load as Markdown</button>
-                </div>
-            </div>
+        <div class="upload-instructions">or paste JSON or Markdown below:</div>
+        <div class="paste-area">
+          <textarea
+            id="jsonTextarea"
+            placeholder="Paste your JSON or Markdown here..."
+          ></textarea>
+          <div class="paste-buttons">
+            <button id="pasteJsonButton">Load as JSON</button>
+            <button id="pasteMarkdownButton">Load as Markdown</button>
+          </div>
         </div>
+      </div>
 
-        <div class="error-message" id="errorMessage"></div>
+      <div class="error-message" id="errorMessage"></div>
 
-        <div class="chat-container" id="chatContainer"></div>
+      <div class="chat-container" id="chatContainer"></div>
     </div>
 
     <button class="reset-button" id="resetButton">← Back</button>
 
+    <!-- Navigation arrows for jumping between messages -->
+    <div class="message-nav" id="messageNav">
+      <button
+        class="message-nav-btn"
+        id="prevMessage"
+        aria-label="Previous message"
+      >
+        ↑
+      </button>
+      <button
+        class="message-nav-btn"
+        id="nextMessage"
+        aria-label="Next message"
+      >
+        ↓
+      </button>
+    </div>
+
     <!-- ===== PHASE 4: CODE MODAL ===== -->
-    <div id="codeModal" class="code-modal-backdrop" style="display: none;">
-        <div class="code-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-            <div class="code-modal-header">
-                <h3 id="modalTitle">Code View</h3>
-                <button class="code-modal-close" aria-label="Close modal">×</button>
-            </div>
-            <div class="code-modal-body">
-                <pre><code id="modalCodeContent"></code></pre>
-            </div>
-            <div class="code-modal-footer">
-                <button class="code-modal-copy">Copy Code</button>
-            </div>
+    <div id="codeModal" class="code-modal-backdrop" style="display: none">
+      <div
+        class="code-modal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modalTitle"
+      >
+        <div class="code-modal-header">
+          <h3 id="modalTitle">Code View</h3>
+          <button class="code-modal-close" aria-label="Close modal">×</button>
         </div>
+        <div class="code-modal-body">
+          <pre><code id="modalCodeContent"></code></pre>
+        </div>
+        <div class="code-modal-footer">
+          <button class="code-modal-copy">Copy Code</button>
+        </div>
+      </div>
     </div>
     <!-- ===== END PHASE 4 ===== -->
 
     <script>
-        const uploadArea = document.getElementById('uploadArea');
-        const uploadBox = document.getElementById('uploadBox');
-        const fileInput = document.getElementById('fileInput');
-        const jsonTextarea = document.getElementById('jsonTextarea');
-        const pasteJsonButton = document.getElementById('pasteJsonButton');
-        const pasteMarkdownButton = document.getElementById('pasteMarkdownButton');
-        const chatContainer = document.getElementById('chatContainer');
-        const header = document.getElementById('header');
-        const resetButton = document.getElementById('resetButton');
-        const errorMessage = document.getElementById('errorMessage');
+      const uploadArea = document.getElementById('uploadArea');
+      const uploadBox = document.getElementById('uploadBox');
+      const fileInput = document.getElementById('fileInput');
+      const jsonTextarea = document.getElementById('jsonTextarea');
+      const pasteJsonButton = document.getElementById('pasteJsonButton');
+      const pasteMarkdownButton = document.getElementById(
+        'pasteMarkdownButton'
+      );
+      const chatContainer = document.getElementById('chatContainer');
+      const header = document.getElementById('header');
+      const resetButton = document.getElementById('resetButton');
+      const errorMessage = document.getElementById('errorMessage');
 
-        // Configure marked options
-        marked.setOptions({
-            breaks: true,
-            gfm: true
+      // Configure marked options
+      marked.setOptions({
+        breaks: true,
+        gfm: true,
+      });
+
+      // ===== PHASE 1: MARKDOWN PARSING FUNCTIONS =====
+      const SECTION_DELIMITER = '\n---\n';
+
+      function returnDesignator(firstLine) {
+        switch (firstLine) {
+          case '**User**':
+            return 'user';
+          case '**Cursor**':
+            return 'agent_response';
+          default:
+            return null;
+        }
+      }
+
+      function processSingleSection(rawSection) {
+        const lines = rawSection.trim().split('\n');
+        const designator = returnDesignator(lines[0]);
+
+        let contentLines = lines;
+        if (designator !== null) {
+          contentLines = lines.slice(1);
+        }
+
+        return {
+          markdown_contents: contentLines.join('\n').trim(),
+          designator: designator,
+        };
+      }
+
+      function processMetadataSection(section) {
+        const lines = section.trim().split('\n');
+        return {
+          title: lines[0].replace(/^# /, ''),
+          metadata_string: lines[1],
+        };
+      }
+
+      function nextSectionBeginning(givenFromIndex, sectionList) {
+        const actualStart = givenFromIndex + 1;
+
+        for (let index = actualStart; index < sectionList.length; index++) {
+          if (sectionList[index].designator !== null) {
+            return index;
+          }
+        }
+
+        return -1;
+      }
+
+      function combineSections(sections) {
+        if (sections.length === 0) {
+          throw new Error(
+            'Number of sections passed into combineSections should always be greater than 0'
+          );
+        }
+
+        return {
+          designator: sections[0].designator,
+          markdown_contents: sections
+            .map((s) => s.markdown_contents)
+            .join(SECTION_DELIMITER),
+        };
+      }
+
+      function sliceOrEnd(sections, start, end) {
+        if (end === -1) {
+          return sections.slice(start);
+        }
+        return sections.slice(start, end);
+      }
+
+      function parseCursorMarkdown(fullContents) {
+        const parts = fullContents.split(SECTION_DELIMITER);
+        const first = parts[0];
+        const rest = parts.slice(1);
+
+        const disjointedSections = rest.map((section) =>
+          processSingleSection(section)
+        );
+        const correctedSections = [];
+
+        let i = 0;
+        while (i !== -1) {
+          const nextIndex = nextSectionBeginning(i, disjointedSections);
+          correctedSections.push(
+            combineSections(sliceOrEnd(disjointedSections, i, nextIndex))
+          );
+          i = nextIndex;
+        }
+
+        const metadata = processMetadataSection(first);
+
+        return {
+          title: metadata.title,
+          metadata_string: metadata.metadata_string,
+          messages: correctedSections.map((section) => ({
+            markdown_content: section.markdown_contents,
+            designator: section.designator,
+          })),
+        };
+      }
+      // ===== END PHASE 1 =====
+
+      // ===== PHASE 1: CODE BLOCK DETECTION AND CLASSIFICATION =====
+      function shouldTruncateCodeBlock(preElement) {
+        // Check line count
+        const codeElement = preElement.querySelector('code');
+        if (codeElement) {
+          const text = codeElement.textContent;
+          const lineCount = text.split('\n').length;
+
+          // Only truncate if more than 15 lines AND content is substantial
+          if (lineCount > 15 && text.trim().length > 200) {
+            return true;
+          }
+        }
+
+        // Check height
+        const height = preElement.offsetHeight;
+        if (height > 400) {
+          return true;
+        }
+
+        return false;
+      }
+
+      function processCodeBlocks(containerElement) {
+        const preBlocks = containerElement.querySelectorAll(
+          '.message-bubble pre'
+        );
+
+        preBlocks.forEach((pre) => {
+          // Skip if already processed
+          if (
+            pre.parentElement &&
+            pre.parentElement.classList.contains('code-block-wrapper')
+          ) {
+            return;
+          }
+
+          const codeElement = pre.querySelector('code');
+          if (!codeElement) return;
+
+          if (shouldTruncateCodeBlock(pre)) {
+            // Create wrapper
+            const wrapper = document.createElement('div');
+            wrapper.className = 'code-block-wrapper';
+
+            // Insert wrapper before pre and move pre into it
+            pre.parentNode.insertBefore(wrapper, pre);
+            wrapper.appendChild(pre);
+
+            // Mark as scrollable
+            pre.setAttribute('data-scrollable', 'true');
+
+            // Create buttons container
+            const buttonsContainer = document.createElement('div');
+            buttonsContainer.className = 'code-block-buttons';
+
+            // Add copy button
+            const copyBtn = document.createElement('button');
+            copyBtn.className = 'code-copy-btn';
+            copyBtn.innerHTML = '📋';
+            copyBtn.setAttribute('aria-label', 'Copy code');
+            copyBtn.setAttribute('title', 'Copy to clipboard');
+
+            copyBtn.addEventListener('click', async () => {
+              try {
+                await navigator.clipboard.writeText(codeElement.textContent);
+                copyBtn.innerHTML = '✓';
+                copyBtn.classList.add('copied');
+                setTimeout(() => {
+                  copyBtn.innerHTML = '📋';
+                  copyBtn.classList.remove('copied');
+                }, 2000);
+              } catch (err) {
+                console.error('Failed to copy:', err);
+              }
+            });
+
+            // Add pop-out button
+            const popoutBtn = document.createElement('button');
+            popoutBtn.className = 'code-popout-btn';
+            popoutBtn.innerHTML = '⤢';
+            popoutBtn.setAttribute('aria-label', 'Open code in modal');
+            popoutBtn.setAttribute('title', 'View in fullscreen');
+
+            popoutBtn.addEventListener('click', () => {
+              const languageClass = codeElement.className;
+              openCodeModal(codeElement.textContent, languageClass);
+            });
+
+            buttonsContainer.appendChild(copyBtn);
+            buttonsContainer.appendChild(popoutBtn);
+            wrapper.appendChild(buttonsContainer);
+          } else {
+            // For regular code blocks, add inline copy button
+            if (!pre.querySelector('.code-copy-btn-inline')) {
+              const copyBtn = document.createElement('button');
+              copyBtn.className = 'code-copy-btn-inline';
+              copyBtn.innerHTML = '📋';
+              copyBtn.setAttribute('aria-label', 'Copy code');
+              copyBtn.setAttribute('title', 'Copy to clipboard');
+
+              copyBtn.addEventListener('click', async () => {
+                try {
+                  await navigator.clipboard.writeText(codeElement.textContent);
+                  copyBtn.innerHTML = '✓';
+                  copyBtn.classList.add('copied');
+                  setTimeout(() => {
+                    copyBtn.innerHTML = '📋';
+                    copyBtn.classList.remove('copied');
+                  }, 2000);
+                } catch (err) {
+                  console.error('Failed to copy:', err);
+                }
+              });
+
+              pre.appendChild(copyBtn);
+            }
+          }
+        });
+      }
+      // ===== END PHASE 1 =====
+
+      // ===== PHASE 5: MODAL FUNCTIONALITY =====
+      function openCodeModal(codeContent, languageClass = '') {
+        const modal = document.getElementById('codeModal');
+        const modalCode = document.getElementById('modalCodeContent');
+
+        // Set code content
+        modalCode.textContent = codeContent;
+
+        // Apply language class if provided
+        if (languageClass) {
+          modalCode.className = languageClass;
+        } else {
+          modalCode.className = '';
+        }
+
+        // Apply syntax highlighting if Prism is available
+        if (typeof Prism !== 'undefined') {
+          Prism.highlightElement(modalCode);
+        }
+
+        // Show modal
+        modal.style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+
+        // Focus on modal
+        modal.focus();
+      }
+
+      function closeCodeModal() {
+        const modal = document.getElementById('codeModal');
+        modal.style.display = 'none';
+        document.body.style.overflow = '';
+      }
+
+      // Initialize modal event listeners (run once on page load)
+      function initializeModalListeners() {
+        const modal = document.getElementById('codeModal');
+        const closeBtn = modal.querySelector('.code-modal-close');
+        const copyBtn = modal.querySelector('.code-modal-copy');
+
+        // Close on backdrop click
+        modal.addEventListener('click', (e) => {
+          if (e.target === modal) {
+            closeCodeModal();
+          }
         });
 
-        // ===== PHASE 1: MARKDOWN PARSING FUNCTIONS =====
-        const SECTION_DELIMITER = "\n---\n";
+        // Close on close button
+        closeBtn.addEventListener('click', () => {
+          closeCodeModal();
+        });
 
-        function returnDesignator(firstLine) {
-            switch (firstLine) {
-                case "**User**":
-                    return "user";
-                case "**Cursor**":
-                    return "agent_response";
-                default:
-                    return null;
-            }
-        }
+        // Close on ESC key
+        document.addEventListener('keydown', (e) => {
+          if (e.key === 'Escape' && modal.style.display === 'flex') {
+            closeCodeModal();
+          }
+        });
 
-        function processSingleSection(rawSection) {
-            const lines = rawSection.trim().split("\n");
-            const designator = returnDesignator(lines[0]);
-            
-            let contentLines = lines;
-            if (designator !== null) {
-                contentLines = lines.slice(1);
-            }
-            
-            return {
-                markdown_contents: contentLines.join("\n").trim(),
-                designator: designator
-            };
-        }
+        // Copy functionality
+        copyBtn.addEventListener('click', async () => {
+          const modalCode = document.getElementById('modalCodeContent');
+          const codeText = modalCode.textContent;
 
-        function processMetadataSection(section) {
-            const lines = section.trim().split("\n");
-            return {
-                title: lines[0].replace(/^# /, ''),
-                metadata_string: lines[1]
-            };
-        }
+          try {
+            await navigator.clipboard.writeText(codeText);
 
-        function nextSectionBeginning(givenFromIndex, sectionList) {
-            const actualStart = givenFromIndex + 1;
-            
-            for (let index = actualStart; index < sectionList.length; index++) {
-                if (sectionList[index].designator !== null) {
-                    return index;
-                }
-            }
-            
-            return -1;
-        }
+            // Show feedback
+            const originalText = copyBtn.textContent;
+            copyBtn.textContent = 'Copied!';
+            copyBtn.classList.add('copied');
 
-        function combineSections(sections) {
-            if (sections.length === 0) {
-                throw new Error("Number of sections passed into combineSections should always be greater than 0");
-            }
-            
-            return {
-                designator: sections[0].designator,
-                markdown_contents: sections.map(s => s.markdown_contents).join(SECTION_DELIMITER)
-            };
-        }
-
-        function sliceOrEnd(sections, start, end) {
-            if (end === -1) {
-                return sections.slice(start);
-            }
-            return sections.slice(start, end);
-        }
-
-        function parseCursorMarkdown(fullContents) {
-            const parts = fullContents.split(SECTION_DELIMITER);
-            const first = parts[0];
-            const rest = parts.slice(1);
-            
-            const disjointedSections = rest.map(section => processSingleSection(section));
-            const correctedSections = [];
-            
-            let i = 0;
-            while (i !== -1) {
-                const nextIndex = nextSectionBeginning(i, disjointedSections);
-                correctedSections.push(combineSections(sliceOrEnd(disjointedSections, i, nextIndex)));
-                i = nextIndex;
-            }
-            
-            const metadata = processMetadataSection(first);
-            
-            return {
-                title: metadata.title,
-                metadata_string: metadata.metadata_string,
-                messages: correctedSections.map(section => ({
-                    markdown_content: section.markdown_contents,
-                    designator: section.designator
-                }))
-            };
-        }
-        // ===== END PHASE 1 =====
-
-        // ===== PHASE 1: CODE BLOCK DETECTION AND CLASSIFICATION =====
-        function shouldTruncateCodeBlock(preElement) {
-            // Check line count
-            const codeElement = preElement.querySelector('code');
-            if (codeElement) {
-                const text = codeElement.textContent;
-                const lineCount = text.split('\n').length;
-                
-                // Only truncate if more than 15 lines AND content is substantial
-                if (lineCount > 15 && text.trim().length > 200) {
-                    return true;
-                }
-            }
-            
-            // Check height
-            const height = preElement.offsetHeight;
-            if (height > 400) {
-                return true;
-            }
-            
-            return false;
-        }
-
-        function processCodeBlocks(containerElement) {
-            const preBlocks = containerElement.querySelectorAll('.message-bubble pre');
-            
-            preBlocks.forEach(pre => {
-                // Skip if already processed
-                if (pre.parentElement && pre.parentElement.classList.contains('code-block-wrapper')) {
-                    return;
-                }
-                
-                if (shouldTruncateCodeBlock(pre)) {
-                    // Create wrapper
-                    const wrapper = document.createElement('div');
-                    wrapper.className = 'code-block-wrapper';
-                    
-                    // Insert wrapper before pre and move pre into it
-                    pre.parentNode.insertBefore(wrapper, pre);
-                    wrapper.appendChild(pre);
-                    
-                    // Mark as scrollable
-                    pre.setAttribute('data-scrollable', 'true');
-                    
-                    // Add pop-out button only
-                    const popoutBtn = document.createElement('button');
-                    popoutBtn.className = 'code-popout-btn';
-                    popoutBtn.innerHTML = '⤢';
-                    popoutBtn.setAttribute('aria-label', 'Open code in modal');
-                    popoutBtn.setAttribute('title', 'View in fullscreen');
-                    
-                    // Add click handler
-                    popoutBtn.addEventListener('click', () => {
-                        const codeElement = pre.querySelector('code');
-                        if (codeElement) {
-                            // Extract language class (e.g., "language-python")
-                            const languageClass = codeElement.className;
-                            openCodeModal(codeElement.textContent, languageClass);
-                        }
-                    });
-                    
-                    wrapper.appendChild(popoutBtn);
-                }
-            });
-        }
-        // ===== END PHASE 1 =====
-
-        // ===== PHASE 5: MODAL FUNCTIONALITY =====
-        function openCodeModal(codeContent, languageClass = '') {
-            const modal = document.getElementById('codeModal');
-            const modalCode = document.getElementById('modalCodeContent');
-            
-            // Set code content
-            modalCode.textContent = codeContent;
-            
-            // Apply language class if provided
-            if (languageClass) {
-                modalCode.className = languageClass;
-            } else {
-                modalCode.className = '';
-            }
-            
-            // Apply syntax highlighting if Prism is available
-            if (typeof Prism !== 'undefined') {
-                Prism.highlightElement(modalCode);
-            }
-            
-            // Show modal
-            modal.style.display = 'flex';
-            document.body.style.overflow = 'hidden';
-            
-            // Focus on modal
-            modal.focus();
-        }
-
-        function closeCodeModal() {
-            const modal = document.getElementById('codeModal');
-            modal.style.display = 'none';
-            document.body.style.overflow = '';
-        }
-
-        // Initialize modal event listeners (run once on page load)
-        function initializeModalListeners() {
-            const modal = document.getElementById('codeModal');
-            const closeBtn = modal.querySelector('.code-modal-close');
-            const copyBtn = modal.querySelector('.code-modal-copy');
-            
-            // Close on backdrop click
-            modal.addEventListener('click', (e) => {
-                if (e.target === modal) {
-                    closeCodeModal();
-                }
-            });
-            
-            // Close on close button
-            closeBtn.addEventListener('click', () => {
-                closeCodeModal();
-            });
-            
-            // Close on ESC key
-            document.addEventListener('keydown', (e) => {
-                if (e.key === 'Escape' && modal.style.display === 'flex') {
-                    closeCodeModal();
-                }
-            });
-            
-            // Copy functionality
-            copyBtn.addEventListener('click', async () => {
-                const modalCode = document.getElementById('modalCodeContent');
-                const codeText = modalCode.textContent;
-                
-                try {
-                    await navigator.clipboard.writeText(codeText);
-                    
-                    // Show feedback
-                    const originalText = copyBtn.textContent;
-                    copyBtn.textContent = 'Copied!';
-                    copyBtn.classList.add('copied');
-                    
-                    setTimeout(() => {
-                        copyBtn.textContent = originalText;
-                        copyBtn.classList.remove('copied');
-                    }, 2000);
-                } catch (err) {
-                    console.error('Failed to copy:', err);
-                    copyBtn.textContent = 'Failed to copy';
-                    setTimeout(() => {
-                        copyBtn.textContent = 'Copy Code';
-                    }, 2000);
-                }
-            });
-        }
-
-        // Call this once when page loads
-        initializeModalListeners();
-        // ===== END PHASE 5 =====
-
-        function showError(message) {
-            errorMessage.textContent = message;
-            errorMessage.classList.add('visible');
             setTimeout(() => {
-                errorMessage.classList.remove('visible');
-            }, 5000);
-        }
+              copyBtn.textContent = originalText;
+              copyBtn.classList.remove('copied');
+            }, 2000);
+          } catch (err) {
+            console.error('Failed to copy:', err);
+            copyBtn.textContent = 'Failed to copy';
+            setTimeout(() => {
+              copyBtn.textContent = 'Copy Code';
+            }, 2000);
+          }
+        });
+      }
 
-        function renderChat(data) {
-            try {
-                // Update header
-                header.innerHTML = `
+      // Call this once when page loads
+      initializeModalListeners();
+      // ===== END PHASE 5 =====
+
+      function showError(message) {
+        errorMessage.textContent = message;
+        errorMessage.classList.add('visible');
+        setTimeout(() => {
+          errorMessage.classList.remove('visible');
+        }, 5000);
+      }
+
+      function renderChat(data) {
+        try {
+          // Update header
+          header.innerHTML = `
                     <h1>${escapeHtml(data.title)}</h1>
-                    <div class="metadata">${escapeHtml(data.metadata_string)}</div>
+                    <div class="metadata">${escapeHtml(
+                      data.metadata_string
+                    )}</div>
                 `;
 
-                // Clear chat container
-                chatContainer.innerHTML = '';
+          // Clear chat container
+          chatContainer.innerHTML = '';
 
-                // Render messages
-                data.messages.forEach(message => {
-                    const messageDiv = document.createElement('div');
-                    messageDiv.className = `message ${message.designator === 'user' ? 'user' : 'agent'}`;
+          // Render messages
+          data.messages.forEach((message) => {
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `message ${
+              message.designator === 'user' ? 'user' : 'agent'
+            }`;
 
-                    const avatar = document.createElement('div');
-                    avatar.className = 'message-avatar';
-                    avatar.textContent = message.designator === 'user' ? 'U' : 'C';
+            const avatar = document.createElement('div');
+            avatar.className = 'message-avatar';
+            avatar.textContent = message.designator === 'user' ? 'U' : 'C';
 
-                    const bubble = document.createElement('div');
-                    bubble.className = 'message-bubble';
-                    bubble.innerHTML = marked.parse(message.markdown_content);
+            const bubble = document.createElement('div');
+            bubble.className = 'message-bubble';
+            bubble.innerHTML = marked.parse(message.markdown_content);
 
-                    messageDiv.appendChild(avatar);
-                    messageDiv.appendChild(bubble);
-                    chatContainer.appendChild(messageDiv);
-                });
+            messageDiv.appendChild(avatar);
+            messageDiv.appendChild(bubble);
+            chatContainer.appendChild(messageDiv);
+          });
 
-                // Show chat, hide upload
-                uploadArea.classList.add('hidden');
-                chatContainer.classList.add('visible');
-                resetButton.classList.add('visible');
+          // Show chat, hide upload
+          uploadArea.classList.add('hidden');
+          chatContainer.classList.add('visible');
+          resetButton.classList.add('visible');
 
-                // ===== PHASE 6: PROCESS CODE BLOCKS AFTER RENDERING =====
-                // Apply syntax highlighting first
-                if (typeof Prism !== 'undefined') {
-                    Prism.highlightAllUnder(chatContainer);
-                }
-                
-                // Then process for collapsibility
-                processCodeBlocks(chatContainer);
-                // ===== END PHASE 6 =====
+          // ===== PHASE 6: PROCESS CODE BLOCKS AFTER RENDERING =====
+          // Apply syntax highlighting first
+          if (typeof Prism !== 'undefined') {
+            Prism.highlightAllUnder(chatContainer);
+          }
 
-            } catch (error) {
-                showError('Error rendering chat: ' + error.message);
-            }
+          // Then process for collapsibility
+          processCodeBlocks(chatContainer);
+          // ===== END PHASE 6 =====
+        } catch (error) {
+          showError('Error rendering chat: ' + error.message);
         }
+      }
 
-        function escapeHtml(text) {
-            const div = document.createElement('div');
-            div.textContent = text;
-            return div.innerHTML;
+      function escapeHtml(text) {
+        const div = document.createElement('div');
+        div.textContent = text;
+        return div.innerHTML;
+      }
+
+      function processJSON(jsonString) {
+        try {
+          const data = JSON.parse(jsonString);
+
+          // Validate structure
+          if (
+            !data.title ||
+            !data.metadata_string ||
+            !Array.isArray(data.messages)
+          ) {
+            throw new Error('Invalid JSON structure');
+          }
+
+          renderChat(data);
+        } catch (error) {
+          showError('Invalid JSON: ' + error.message);
         }
+      }
 
-        function processJSON(jsonString) {
-            try {
-                const data = JSON.parse(jsonString);
-                
-                // Validate structure
-                if (!data.title || !data.metadata_string || !Array.isArray(data.messages)) {
-                    throw new Error('Invalid JSON structure');
-                }
-
-                renderChat(data);
-            } catch (error) {
-                showError('Invalid JSON: ' + error.message);
-            }
+      // ===== PHASE 2: FILE PROCESSING ROUTER =====
+      function processFile(fileContent, fileName) {
+        if (fileName.endsWith('.json')) {
+          processJSON(fileContent);
+        } else if (fileName.endsWith('.md')) {
+          try {
+            const parsedData = parseCursorMarkdown(fileContent);
+            renderChat(parsedData);
+          } catch (error) {
+            showError('Invalid markdown format: ' + error.message);
+          }
+        } else {
+          showError('Unsupported file type. Please upload .json or .md files.');
         }
+      }
+      // ===== END PHASE 2 =====
 
-        // ===== PHASE 2: FILE PROCESSING ROUTER =====
-        function processFile(fileContent, fileName) {
-            if (fileName.endsWith('.json')) {
-                processJSON(fileContent);
-            } else if (fileName.endsWith('.md')) {
-                try {
-                    const parsedData = parseCursorMarkdown(fileContent);
-                    renderChat(parsedData);
-                } catch (error) {
-                    showError('Invalid markdown format: ' + error.message);
-                }
-            } else {
-                showError('Unsupported file type. Please upload .json or .md files.');
-            }
+      // File upload handling
+      uploadBox.addEventListener('click', () => {
+        fileInput.click();
+      });
+
+      fileInput.addEventListener('change', (e) => {
+        const file = e.target.files[0];
+        if (file) {
+          const reader = new FileReader();
+          reader.onload = (event) => {
+            processFile(event.target.result, file.name);
+          };
+          reader.readAsText(file);
         }
-        // ===== END PHASE 2 =====
+      });
 
-        // File upload handling
-        uploadBox.addEventListener('click', () => {
-            fileInput.click();
-        });
+      // Drag and drop handling
+      uploadBox.addEventListener('dragover', (e) => {
+        e.preventDefault();
+        uploadBox.classList.add('dragover');
+      });
 
-        fileInput.addEventListener('change', (e) => {
-            const file = e.target.files[0];
-            if (file) {
-                const reader = new FileReader();
-                reader.onload = (event) => {
-                    processFile(event.target.result, file.name);
-                };
-                reader.readAsText(file);
-            }
-        });
+      uploadBox.addEventListener('dragleave', () => {
+        uploadBox.classList.remove('dragover');
+      });
 
-        // Drag and drop handling
-        uploadBox.addEventListener('dragover', (e) => {
-            e.preventDefault();
-            uploadBox.classList.add('dragover');
-        });
+      uploadBox.addEventListener('drop', (e) => {
+        e.preventDefault();
+        uploadBox.classList.remove('dragover');
 
-        uploadBox.addEventListener('dragleave', () => {
-            uploadBox.classList.remove('dragover');
-        });
+        const file = e.dataTransfer.files[0];
+        if (file) {
+          const fileName = file.name;
+          if (fileName.endsWith('.json') || fileName.endsWith('.md')) {
+            const reader = new FileReader();
+            reader.onload = (event) => {
+              processFile(event.target.result, fileName);
+            };
+            reader.readAsText(file);
+          } else {
+            showError('Please drop a .json or .md file');
+          }
+        }
+      });
 
-        uploadBox.addEventListener('drop', (e) => {
-            e.preventDefault();
-            uploadBox.classList.remove('dragover');
-            
-            const file = e.dataTransfer.files[0];
-            if (file) {
-                const fileName = file.name;
-                if (fileName.endsWith('.json') || fileName.endsWith('.md')) {
-                    const reader = new FileReader();
-                    reader.onload = (event) => {
-                        processFile(event.target.result, fileName);
-                    };
-                    reader.readAsText(file);
-                } else {
-                    showError('Please drop a .json or .md file');
-                }
-            }
-        });
+      // ===== PHASE 4: PASTE BUTTON HANDLERS =====
+      // Paste JSON handling
+      pasteJsonButton.addEventListener('click', () => {
+        const jsonString = jsonTextarea.value.trim();
+        if (jsonString) {
+          processJSON(jsonString);
+        } else {
+          showError('Please paste JSON content first');
+        }
+      });
 
-        // ===== PHASE 4: PASTE BUTTON HANDLERS =====
-        // Paste JSON handling
-        pasteJsonButton.addEventListener('click', () => {
-            const jsonString = jsonTextarea.value.trim();
-            if (jsonString) {
-                processJSON(jsonString);
-            } else {
-                showError('Please paste JSON content first');
-            }
-        });
+      // Paste Markdown handling
+      pasteMarkdownButton.addEventListener('click', () => {
+        const markdownString = jsonTextarea.value.trim();
+        if (markdownString) {
+          try {
+            const parsedData = parseCursorMarkdown(markdownString);
+            renderChat(parsedData);
+          } catch (error) {
+            showError('Invalid markdown format: ' + error.message);
+          }
+        } else {
+          showError('Please paste markdown content first');
+        }
+      });
+      // ===== END PHASE 4 =====
 
-        // Paste Markdown handling
-        pasteMarkdownButton.addEventListener('click', () => {
-            const markdownString = jsonTextarea.value.trim();
-            if (markdownString) {
-                try {
-                    const parsedData = parseCursorMarkdown(markdownString);
-                    renderChat(parsedData);
-                } catch (error) {
-                    showError('Invalid markdown format: ' + error.message);
-                }
-            } else {
-                showError('Please paste markdown content first');
-            }
-        });
-        // ===== END PHASE 4 =====
-
-        // Reset button
-        resetButton.addEventListener('click', () => {
-            uploadArea.classList.remove('hidden');
-            chatContainer.classList.remove('visible');
-            resetButton.classList.remove('visible');
-            chatContainer.innerHTML = '';
-            jsonTextarea.value = '';
-            fileInput.value = '';
-            header.innerHTML = `
+      // Reset button
+      resetButton.addEventListener('click', () => {
+        uploadArea.classList.remove('hidden');
+        chatContainer.classList.remove('visible');
+        resetButton.classList.remove('visible');
+        messageNav.classList.remove('visible');
+        chatContainer.innerHTML = '';
+        jsonTextarea.value = '';
+        fileInput.value = '';
+        header.innerHTML = `
                 <h1>Cursor Chat Viewer</h1>
                 <div class="metadata">Upload a chat export to view</div>
             `;
+      });
+
+      // ===== MESSAGE NAVIGATION (USER MESSAGES ONLY) =====
+      const messageNav = document.getElementById('messageNav');
+      const prevMessageBtn = document.getElementById('prevMessage');
+      const nextMessageBtn = document.getElementById('nextMessage');
+      let currentMessageIndex = -1;
+      let messageElements = [];
+
+      function updateMessageNav() {
+        // Only get user messages
+        messageElements = Array.from(
+          document.querySelectorAll('.message.user')
+        );
+
+        if (messageElements.length > 0) {
+          messageNav.classList.add('visible');
+          updateNavButtons();
+        } else {
+          messageNav.classList.remove('visible');
+        }
+      }
+
+      function updateNavButtons() {
+        prevMessageBtn.disabled = currentMessageIndex <= 0;
+        nextMessageBtn.disabled =
+          currentMessageIndex >= messageElements.length - 1;
+      }
+
+      function scrollToMessage(index) {
+        if (index >= 0 && index < messageElements.length) {
+          currentMessageIndex = index;
+          messageElements[index].scrollIntoView({
+            behavior: 'smooth',
+            block: 'center',
+          });
+          updateNavButtons();
+        }
+      }
+
+      prevMessageBtn.addEventListener('click', () => {
+        if (currentMessageIndex > 0) {
+          scrollToMessage(currentMessageIndex - 1);
+        }
+      });
+
+      nextMessageBtn.addEventListener('click', () => {
+        if (currentMessageIndex < messageElements.length - 1) {
+          scrollToMessage(currentMessageIndex + 1);
+        } else if (currentMessageIndex === -1 && messageElements.length > 0) {
+          scrollToMessage(0);
+        }
+      });
+      // ===== END MESSAGE NAVIGATION =====
+
+      // ===== COPY FUNCTIONALITY FOR MESSAGE BUBBLES =====
+      function addCopyButtonToMessage(messageBubble) {
+        // Skip if already has a copy button
+        if (messageBubble.querySelector('.message-copy-btn')) {
+          return;
+        }
+
+        const copyBtn = document.createElement('button');
+        copyBtn.className = 'message-copy-btn';
+        copyBtn.innerHTML = '📋';
+        copyBtn.setAttribute('aria-label', 'Copy message');
+        copyBtn.setAttribute('title', 'Copy message content');
+
+        copyBtn.addEventListener('click', async (e) => {
+          e.stopPropagation();
+
+          // Get the text content, excluding the copy button itself
+          const textToCopy = messageBubble.innerText.replace('📋', '').trim();
+
+          try {
+            await navigator.clipboard.writeText(textToCopy);
+
+            // Show feedback
+            const originalHTML = copyBtn.innerHTML;
+            copyBtn.innerHTML = '✓';
+            copyBtn.classList.add('copied');
+
+            setTimeout(() => {
+              copyBtn.innerHTML = originalHTML;
+              copyBtn.classList.remove('copied');
+            }, 2000);
+          } catch (err) {
+            console.error('Failed to copy:', err);
+            copyBtn.innerHTML = '✗';
+            setTimeout(() => {
+              copyBtn.innerHTML = '📋';
+            }, 2000);
+          }
         });
+
+        messageBubble.appendChild(copyBtn);
+      }
+
+      function addCopyButtonsToAllMessages() {
+        const allBubbles = document.querySelectorAll('.message-bubble');
+        allBubbles.forEach((bubble) => addCopyButtonToMessage(bubble));
+      }
+      // ===== END COPY FUNCTIONALITY =====
+
+      // Update the renderChat function to initialize navigation and copy buttons
+      const originalRenderChat = renderChat;
+      renderChat = function (data) {
+        originalRenderChat(data);
+        currentMessageIndex = -1;
+        updateMessageNav();
+        addCopyButtonsToAllMessages();
+      };
     </script>
-</body>
+  </body>
 </html>
